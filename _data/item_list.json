@@ -1,0 +1,46 @@
+[
+    {
+        "name": "カビゴン",
+        "type": {
+            "normal"
+        },
+        "parents": "WAO"
+    },
+    {
+        "name": "ザマゼンタ",
+        "type": {
+            "fighter"
+        },
+        "parents": "WAO"
+    },
+    {
+        "name": "ムゲンダイ",
+        "type": {
+            "poison",
+            "doragon"
+        },
+        "parents": "WAO"
+    },
+    {
+        "name": "ダイオウドウ",
+        "type": {
+            "steel",
+        },
+        "parents": "WAO"
+    },
+    {
+        "name": "キングラー",
+        "type": {
+            "water",
+        },
+        "parents": "WAO"
+    },
+    {
+        "name": "セキタンザン",
+        "type": {
+            "rock",
+            "fire"
+        },
+        "parents": "WAO"
+    }
+]
