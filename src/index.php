@@ -5,7 +5,8 @@ class test
   {
     echo 'test class' . PHP_EOL;
 
-    $this->testIsSet();
+    //$this->testIsSet();
+    $this->getJson();
   }
   private function testIsSet()
   {
@@ -31,6 +32,12 @@ class test
     var_dump(isset($list['null'])).PHP_EOL;
 
     return true;
+  }
+  private function getJson()
+  {
+    $url = __DIR__ . '/../_data/item_list.json';
+    $json = file_get_contents($url);
+    return $json
   }
 }
 
