@@ -6,7 +6,7 @@ class test
     echo 'test class' . PHP_EOL;
 
     //$this->testIsSet();
-    $this->getJson();
+    var_dump( $this->getJson());
   }
   private function testIsSet()
   {
@@ -37,7 +37,7 @@ class test
   {
     $url = __DIR__ . '/../_data/item_list.json';
     $json = file_get_contents($url);
-    return $json
+    return $json;
   }
 }
 
