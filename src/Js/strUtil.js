@@ -67,12 +67,6 @@ var strUtil = (function ($) {
       init: function() {
           console.log(getDisplayText());
       },
-      setId: function(id) {
-          strUtil.id = id;
-      },
-      getId: function() {
-          return strUtil.id;
-      },
       setStr: function(str) {
           strUtil.str = str;
       },
