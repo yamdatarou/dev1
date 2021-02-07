@@ -47,7 +47,7 @@ var strUtil = (function ($) {
     /**
      * 全角1文字・半角0.5文字デ数える
      */
-    function getStrLen(str) {
+    function countStrLen(str) {
         let count = 0;
         for (let i = 0, len = str.length; i < len; i++) {
             let c = str.charCodeAt(i);
@@ -74,7 +74,7 @@ var strUtil = (function ($) {
           return strUtil.str;
       },
       getStrCount: function() {
-          return getStrLen(strUtil.getStr());
+          return countStrLen(strUtil.getStr());
       }
     };
 })($)
