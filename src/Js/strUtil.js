@@ -44,7 +44,25 @@ var strUtil = (function ($) {
             return target;
         }
     }
-
+    /**
+     * 全角1文字・半角0.5文字デ数える
+     */
+    function getStrLen(str) {
+        let count = 0;
+        for (let i = 0, len = str.length; i < len; i++) {
+            let c = str.charCodeAt(i);
+            //console.log(i + '::' + c);
+            if (!str[i].match(/\r?\n/g)) { // 改行コード判定
+      	        if (c >= 0x0 && c <= 0x7f) { // 全角半角判定
+        	        count += 0.5
+      	        } else {
+        	        count += 1
+      	        }
+    	    }
+        }
+        return count;
+    }
+    
     return {
       init: function() {
           console.log(getDisplayText());
@@ -60,6 +78,9 @@ var strUtil = (function ($) {
       },
       getStr: function() {
           return strUtil.str;
+      },
+      getStrCount: function() {
+          return getStrLen(strUtil.getStr());
       }
     };
 })($)
